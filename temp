@@ -1,0 +1,5 @@
+const arcCenter = Offset(200, 80);
+final arcRect = Rect.fromCircle(center: arcCenter, radius: 75);
+final startAngle = degreesToRadians(10);
+final sweepAngle = degreesToRadians(90);
+canvas.drawArc(arcRect, startAngle, sweepAngle, true, curvesPaint);
