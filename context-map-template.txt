@@ -1,0 +1,270 @@
+# AI Context Map
+
+This document helps AI agents understand and navigate the repository.
+
+---
+
+# Repository Overview
+
+Project Name:
+Primary Language:
+Architecture Style:
+
+Main Entry Points:
+- backend entry
+- frontend entry
+- CLI entry
+
+---
+
+# Repository Structure
+
+Root Modules
+
+src/
+apps/
+packages/
+services/
+libs/
+tests/
+
+Short description for each.
+
+---
+
+# Domain Modules
+
+List core domains.
+
+Example:
+
+Auth
+Product
+Order
+Payment
+Inventory
+
+For each domain include:
+
+Domain Name
+Purpose
+Location
+Key Responsibilities
+Key Files
+
+Example format:
+
+## Order Domain
+
+Location
+src/modules/order/
+
+Responsibilities
+- create order
+- update order
+- manage order status
+
+Key Components
+- OrderController
+- OrderService
+- OrderRepository
+
+Important Files
+src/modules/order/OrderController.ts
+src/modules/order/OrderService.ts
+
+---
+
+# Feature Mapping
+
+Map user features to code locations.
+
+Example:
+
+Create Order
+Location:
+src/modules/order/create/
+
+Order History
+Location:
+src/modules/order/history/
+
+Checkout Flow
+Location:
+src/modules/payment/checkout/
+
+---
+
+# API Layer
+
+Location
+controllers/
+routes/
+
+Main APIs
+- authentication
+- product APIs
+- order APIs
+
+---
+
+# Data Layer
+
+Database models
+ORM entities
+Repositories
+
+Location example:
+
+src/database/
+src/models/
+
+Important models.
+
+---
+
+# Service Layer
+
+Core business logic.
+
+Location:
+src/services/
+
+List critical services.
+
+---
+
+# UI / Frontend Layer (if applicable)
+
+Location
+frontend/
+
+Important pages/components.
+
+Example:
+
+Product Page
+frontend/pages/product/
+
+Checkout Page
+frontend/pages/checkout/
+
+---
+
+# Infrastructure
+
+External integrations.
+
+Examples:
+
+Payment Gateway
+Email Service
+Search Service
+
+Locations:
+
+src/infrastructure/
+
+---
+
+# Configuration
+
+Important config files.
+
+Examples:
+
+.env
+config/
+docker/
+ci/
+
+---
+
+# Testing Structure
+
+Location:
+
+tests/
+integration/
+e2e/
+
+Examples:
+
+tests/order/
+tests/payment/
+
+---
+
+# Dependency Graph (High Level)
+
+Explain how main modules interact.
+
+Example:
+
+Frontend
+  ↓
+API
+  ↓
+Service Layer
+  ↓
+Repository
+  ↓
+Database
+
+---
+
+# Important Code Paths
+
+Example workflows:
+
+User Login
+
+AuthController
+ → AuthService
+ → UserRepository
+ → Database
+
+Order Creation
+
+OrderController
+ → OrderService
+ → InventoryService
+ → PaymentService
+
+---
+
+# AI Navigation Rules
+
+Rules AI agents should follow when modifying the code.
+
+Examples:
+
+- Do not create new modules without checking existing domains.
+- Business logic must stay in service layer.
+- Controllers should remain thin.
+- Database access must go through repositories.
+
+---
+
+# High Risk Areas
+
+Areas where AI should be cautious.
+
+Examples:
+
+Payment processing
+Authentication
+Database migrations
+
+---
+
+# Summary for AI Agents
+
+Short summary:
+
+Where to find:
+- APIs
+- business logic
+- database models
+- UI
+- tests
