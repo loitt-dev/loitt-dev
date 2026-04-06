@@ -1,0 +1,27 @@
+Analyze this repository and generate a complete AI Context Map.
+
+The goal is to help AI coding agents understand and navigate the codebase efficiently.
+
+Requirements:
+
+- Identify domain modules
+- Map features to folders
+- Identify core services and entry points
+- Identify APIs and business logic
+- Identify database models
+- Identify infrastructure integrations
+- Identify test structure
+- Generate high-level dependency graph
+- Provide AI navigation rules
+
+Focus on code navigation and architecture discovery.
+
+Do NOT summarize the project.
+
+Output the context map using the following template:
+
+[PASTE TEMPLATE HERE]
+
+Save the result as:
+
+ai/context_map.md
