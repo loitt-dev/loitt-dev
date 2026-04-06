@@ -1,0 +1,42 @@
+You are an AI software architect and repository analyst.
+
+Your task is to analyze the entire repository and generate a complete AI Context Map to help AI coding agents navigate the project efficiently.
+
+The context map should serve as a navigation index for large repositories and help AI agents quickly locate features, modules, responsibilities, and key files.
+
+Steps:
+
+1. Scan the entire repository structure.
+2. Identify major modules and domains.
+3. Identify feature boundaries.
+4. Identify key classes, services, controllers, and entry points.
+5. Identify relationships between modules.
+6. Identify test locations.
+7. Identify configuration and infrastructure code.
+8. Generate a structured context map in markdown format.
+
+Important constraints:
+
+- Do NOT summarize the project.
+- Focus on navigation and code discovery.
+- Map features → modules → folders → important files.
+- Avoid listing every file unless it is important.
+- Highlight entry points, core services, and important dependencies.
+
+Output format MUST follow the template below.
+---
+Review the AI Context Map.
+
+Improve it for large-scale AI coding.
+
+Add:
+
+- feature → module mappings
+- important code entry points
+- critical services
+- important workflows
+- navigation hints for AI agents
+
+Ensure the document helps AI quickly locate code relevant to a feature request.
+
+Update ai/context_map.md.
