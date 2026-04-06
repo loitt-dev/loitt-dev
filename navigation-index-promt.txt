@@ -1,0 +1,197 @@
+You are an expert software architect and AI coding assistant.
+
+Your task is to analyze the entire repository and generate a Navigation Index that helps AI coding agents quickly understand and navigate the codebase.
+
+The Navigation Index will be used by AI systems (such as Claude Code or other AI coding tools) to efficiently locate modules, features, and important files in a large repository.
+
+## Requirements
+
+1. Analyze the repository structure.
+2. Identify the core modules and their responsibilities.
+3. Identify feature locations.
+4. Identify important system files.
+5. Identify module dependencies.
+6. Identify testing locations.
+7. Do NOT include unnecessary small files.
+8. Focus only on architecturally important components.
+
+The output must follow the Navigation Index Template exactly.
+
+The index should allow an AI agent to navigate a repository larger than 100k lines of code efficiently.
+
+---
+
+## Navigation Index Template
+
+Generate a markdown file with the following sections:
+
+# Repository Navigation Index
+
+## 1. System Overview
+
+Provide a short explanation of the system architecture.
+
+Include:
+- application type
+- main layers
+- major subsystems
+
+---
+
+## 2. Core System Files
+
+List the most important files required to understand the system.
+
+Example:
+
+Application Entry
+/path/to/main/file
+
+Configuration
+/path/to/config/
+
+Database Schema
+/path/to/schema
+
+Shared Utilities
+/path/to/common/
+
+---
+
+## 3. Module Index
+
+For each major module include:
+
+Module Name
+
+Location:
+/path/to/module/
+
+Responsibilities
+- responsibility 1
+- responsibility 2
+
+Key Files
+- file1
+- file2
+- file3
+
+---
+
+## 4. Feature → Location Mapping
+
+Map user-facing features to code locations.
+
+Feature Name
+/path/to/feature/location
+
+Example:
+
+User Authentication
+src/modules/auth/
+
+Create Order
+src/modules/order/create/
+
+Product Listing
+src/modules/product/
+
+Checkout Flow
+src/modules/checkout/
+
+---
+
+## 5. Module Dependency Map
+
+Explain module dependencies.
+
+Module Name
+depends on:
+- dependency module 1
+- dependency module 2
+
+---
+
+## 6. Important Development Locations
+
+Controllers
+/path/
+
+Services
+/path/
+
+Repositories
+/path/
+
+UI Components
+/path/
+
+API Layer
+/path/
+
+---
+
+## 7. Testing Structure
+
+API Tests
+/path/
+
+Integration Tests
+/path/
+
+E2E Tests
+/path/
+
+---
+
+## 8. Common Development Tasks
+
+List common development tasks and where they should be implemented.
+
+Example:
+
+Add new API endpoint
+→ src/modules/[module]/controller/
+
+Add database model
+→ prisma/schema.prisma
+
+Add business logic
+→ src/modules/[module]/service/
+
+Add UI page
+→ src/frontend/pages/
+
+---
+
+## 9. Top 20 Important Files
+
+List the 20 most important files developers or AI agents should read first to understand the system.
+
+---
+
+## 10. Architectural Rules
+
+List important architecture rules discovered in the repository.
+
+Examples:
+
+- Controllers should not contain business logic
+- Services contain core business logic
+- Repositories handle database access
+- UI layer must not directly access database
+
+---
+
+## Output Requirements
+
+The output must be:
+
+- A single markdown file
+- Structured exactly according to the template
+- Focused on navigation and architecture
+- Optimized for AI agents navigating large repositories
+
+Name the file:
+
+ai/navigation_index.md
