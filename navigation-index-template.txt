@@ -1,0 +1,42 @@
+# Repository Navigation Index
+
+## System Overview
+
+This system is an e-commerce platform.
+
+Layers:
+- API layer
+- Business logic layer
+- Data access layer
+- Frontend
+
+---
+
+## Core System Files
+
+Application Entry
+src/main.ts
+
+Configuration
+src/config/
+
+Database Schema
+prisma/schema.prisma
+
+---
+
+## Module Index
+
+Order Module
+
+Location
+src/modules/order/
+
+Responsibilities
+- create order
+- update order status
+
+Key Files
+OrderController.ts
+OrderService.ts
+OrderRepository.ts
